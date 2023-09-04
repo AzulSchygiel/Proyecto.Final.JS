@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="imagenes/logo_marca_BOOM.png" alt="BOOM">
+            <div>
+                <img onclick="showCart(this)" id="logo" class="cart" src="imagenes/logo_carritoooo.png" alt="carrito">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <div class="scroll-container">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <div class="card-items">
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+                <button id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</button>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/remera_negra_lisa_5.jpg" alt="Remera básica negra">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Remera básica</p>
+                <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/remera_4_blanca_vaso_gigante_invasor.jpg" alt="Remera estampada blanca">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Harajuku Japan Invasor</p>
+                <a href="" class="btn-add-cart" data-id="2">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/remera_3_negra_con_rayos.png" alt="Remera estampada negra">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Lightning storm</p>
+                <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/Remera_6_negra_gato_enojado.jpg" alt="Remera estampada negra">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">krull kitty</p>
+                <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/Remera_7_primera_invasion_zombi.jpg" alt="Remera estampada negra">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">My first zombie apocalypse</p>
+                <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/Remera_11_lluvia_de_estrellas.jpg" alt="Remera estampada negra">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Shining star</p>
+                <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/Remera_10_club_de_gatitos.jpg" alt="Remera estampada negra">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Kitten club</p>
+                <a href="" data-id="7" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/remeras/Remera_8_carrito_del_espacio.jpg" alt="Remera estampada negra">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Human desintegration</p>
+                <a href="" data-id="8" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/ADIDAS_negras_y_blancas_zapas_2.jpg" alt="Zapatillas negro con blanco">
+                    <p>$<span>5000</span></p>
+                </div>
+                <p class="title">Adidas Superstar</p>
+                <a href="" data-id="9" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/DC_blancas_y_negras_zapas_1.jpg" alt="Zapatillas negro con blanco">
+                    <p>$<span>5000</span></p>
+                </div>
+                <p class="title">DC graffik</p>
+                <a href="" data-id="10" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/Nike_air_jordan_1.jpg" alt="Zapatillas negro, blanco y rojo">
+                    <p>$<span>5000</span></p>
+                </div>
+                <p class="title">Nike Air Jordan 1 Retro Sneakers</p>
+                <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/Buzo_con_capucha_gris_1.jpg" alt="Buzo con capucha gris">
+                    <p>$<span>8000</span></p>
+                </div>
+                <p class="title">Buzo básico</p>
+                <a href="" data-id="12" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/Jogging_gris_1.jpg" alt="Jogging gris">
+                    <p>$<span>6000</span></p>
+                </div>
+                <p class="title">Jogging básico</p>
+                <a href="" data-id="13" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/campera_con_capucha_azul_oscuro_1.jpg" alt="Campera con capucha azul oscuro">
+                    <p>$<span>8000</span></p>
+                </div>
+                <p class="title">Campera básica</p>
+                <a href="" data-id="14" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/Pantalon_adidas_negro_con_rayas_1.jpg" alt="Buzo con capucha gris oscuro">
+                    <p>$<span>8000</span></p>
+                </div>
+                <p class="title">Buzo classic</p>
+                <a href="" data-id="15" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/Pantalon_adidas_negro_con_rayas_2.jpg" alt="Pantalón Adidas negro con rayas">
+                    <p>$<span>6000</span></p>
+                </div>
+                <p class="title">Pantalón Adidas clásico</p>
+                <a href="" data-id="16" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="ropa.js"></script>
+    <script defer src="custom.js"></script>
+    <script defer src="findelacompra.js"></script>
+    
+</body>
+</html>
