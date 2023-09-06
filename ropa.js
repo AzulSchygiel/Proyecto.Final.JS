@@ -1,5 +1,10 @@
 const ropa = []
 
+const logo = document.getElementById('logoBoom')
+const logoBoom = document.createElement('img');
+logoBoom.src = "imagenes/logo_marca_BOOM.png";
+logo.appendChild(logoBoom);
+console.log(logoBoom)
 /*+++++++++++++++++++ BACKEND en MOCKAPI +++++++++++++++*/
 
 let url = 'https://64f5456c2b07270f705d1ce6.mockapi.io/api/ropa/ropa';
