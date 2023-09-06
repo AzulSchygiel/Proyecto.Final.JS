@@ -86,13 +86,6 @@ header{
     width: 260px;
     height: auto;
     padding-top: 30px;
-    transition: 0.5s
-}
-
-.carts img:hover{
-transform: scale(1.7);
-z-index: 1;
-position: absolute
 }
 
 .carts p{
